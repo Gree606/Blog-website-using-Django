@@ -1,0 +1,16 @@
+<!-- This class is used to basically reuse the template components that are commmon to many pages. This is done by using block content -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% if title %}
+    <title>Gree's Blog - {{title}}</title>
+    {% else %}
+    <title>Gree's Blog</title>
+    {% endif %}
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>
